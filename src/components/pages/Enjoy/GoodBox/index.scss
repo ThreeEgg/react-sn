@@ -1,0 +1,87 @@
+.good-box{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom:.60rem;
+    .good-item{
+        width:46%;
+        background: #fff;
+        border-radius: .10rem;
+        height:2.65rem;
+        margin-top:.05rem;
+        position: relative;
+        .btn{
+            position: absolute;
+            right:0;
+            bottom: 0;
+            font-size:.16rem;
+            padding:.04rem .08rem;
+            background: #ff9;
+            color: #333; 
+            border-radius: 50%;
+            z-index: 12;
+            border:0;
+            outline: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .imgbox{
+            margin-left:0;
+            width:100%;
+            height:1.63rem;
+            img{
+                width:1.49rem;
+                margin: .14rem auto;
+                height:1.49rem;
+            }
+        }
+        div{
+            margin-left:.12rem;
+            span{
+                color:#F50;
+                font-size:.12rem;
+                border-radius: 5px;
+                border:1px solid #F50;
+                margin-right:2px;
+                padding:0 2px;
+            }
+        }
+        .name{
+            height:.34rem;
+            margin-left:.12rem;
+            color:#333;
+            font-size:.14rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            white-space: normal;
+        }
+        .price{
+            margin-left:.12rem;
+            margin-top:.05rem;
+            color:rgb(255,103,0);
+            font-size: .16rem;
+            span{
+                color:red;
+                font-size: .18rem;
+            }
+        }
+    }
+    .good-item:nth-of-type(2n){
+        margin-left:.10rem;
+    }
+    .text{
+        height:.4rem;
+        width:100%;
+        line-height: .4rem;
+        text-align: center;
+        padding:0 .1rem;
+        border:1px solid rgba(151,151,151,.5);
+        border-radius: .1rem;
+        margin:.1rem;
+    }
+}

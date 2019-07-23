@@ -81,7 +81,15 @@ module.exports = function(proxy, allowedHost) {
       disableDotRule: true,
     },
     public: allowedHost,
-    proxy,
+    proxy:{
+      "/api/sn":{
+        target:"http://www.forgettime.cn:8088",
+        changeOrigin:true,
+        pathRewrite:{
+          "^/api":""
+        }
+      }
+    },
     before(app, server) {
       if (fs.existsSync(paths.proxySetup)) {
         // This registers user provided middleware for proxy reasons

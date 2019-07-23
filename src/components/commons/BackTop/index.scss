@@ -1,0 +1,17 @@
+.back-top{
+    width:.50rem;
+    height:.50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:rgba(51,51,51,0.6);
+    position: fixed;
+    z-index: 20;
+    right:.20rem;
+    bottom: .70rem;
+    border-radius: 50%;
+    i{
+        color:#fff;
+        font-size: .20rem;
+    }
+}
